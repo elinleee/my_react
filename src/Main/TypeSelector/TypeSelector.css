@@ -1,0 +1,107 @@
+.TypeSelector{
+    /* background: linear-gradient(90deg, rgb(110, 94, 254) 0%, rgba(73, 63, 252, 1) 100%); */
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+.sermon-menu{
+    display: flex;
+    list-style: none;
+    text-align: center;
+    width: 100%;
+    justify-content: center; /*flex-start;*/
+    margin-right: 2rem;
+}
+
+.sermon-type{
+    color: rgb(75, 75, 75);
+    text-decoration: none;
+    padding: .5rem 1rem;
+    font-size: 0.8em;
+    margin: 0 2px;
+}
+
+.sermon-type:hover{
+    color: white;
+    background-color: #dadada;
+    border-radius: 4px;
+    transition: all .2s ease-out;
+}
+
+.sermon-type-selected{
+    color: white;
+    background-color: #dadada;
+    border-radius: 4px;
+    transition: all .2s ease-out;
+}
+
+.sermon-type-mobile{
+    display: none;
+}
+
+@media screen and (max-width: 960px) {
+    .Navbar{
+        position: relative;
+    }
+
+    .nav-menu{
+        flex-direction: column;
+        width: 100%;
+        height: 500px;
+        position: absolute;
+        top: 80px;
+        left:-100%;
+        transition: all .5s ease;
+    }
+
+    .nav-menu.active{
+        background: #6668f4;
+        left: 0;
+        transition: all .5s ease;
+        z-index: 1;
+    }
+
+    .sermon-type{
+        text-align: center;
+        padding: 2rem;
+        width: 100%;
+        display: table;
+    }
+
+    .sermon-type:hover{
+        background-color: #7577fa;
+        border-radius: 0;
+    }
+
+    .menu-icon{
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: translate(-100%, 60%);
+        font-size: 1.8rem;
+        cursor: pointer;
+    }
+
+    .sermon-type-mobile{
+        display: block;
+        text-align: center;
+        padding: 1.5rem;
+        margin: 2rem auto;
+        border-radius: 4px;
+        width: 80%;
+        background: #fad934;
+        text-decoration: none;
+        color: #fff;
+        font-size: 1.5rem;
+    }
+
+    .sermon-type-mobile:hover{
+        background: #fff;
+        color: #6568f4;
+        transition: 250ms;
+    }
+}
