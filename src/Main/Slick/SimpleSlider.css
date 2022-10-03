@@ -32,3 +32,32 @@
   .dots_custom li.slick-active button {
     background-color: #08c1ce;
   }
+
+.slick-slide {
+  height: 500px;
+  /* border: 20px solid #05486e; */
+  /* box-sizing: border-box; */
+}
+
+.slick-slide img {
+  object-fit: cover;
+  height: 500px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 960px) {
+  .container {
+    height: 200px;
+  }
+  
+  .slick-slide {
+    height: 200px;
+    /* border: 20px solid #05486e; */
+    /* box-sizing: border-box; */
+  }
+  
+  .slick-slide img {
+    height: 200px;
+  }
+}

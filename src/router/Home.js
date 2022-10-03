@@ -6,6 +6,7 @@ import { styled } from '@mui/material/styles';
 import TypeSelector from '../Main/TypeSelector/TypeSelector';
 import YoutubePlayer from '../Main/Player/YoutubePlayer';
 import { Box, Stack, Paper } from '@mui/material';
+import SimpleSlider from '../Main/Slick/SimpleSlider';
 
 function Home(props) {
 	const Item = styled(Paper)(({ theme }) => ({
@@ -20,7 +21,7 @@ function Home(props) {
 	return (
 		<>
 			<Box width="100%" overflow="hidden">
-				<img src="https://placeimg.com/1920/450/any" />
+				<SimpleSlider/>
 			</Box>
 			<Box width="100%" alignItems="center">
 				<TypeSelector/>

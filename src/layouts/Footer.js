@@ -17,7 +17,7 @@ function Footer(props) {
 
   return (
     <Box className="footer">
-      <Grid container spacing={4} width='80vw' margin="0 auto" justifyContent='space-around'>
+      <Grid container spacing={2} width='80vw' margin="0 auto" justifyContent='space-around'>
         {FooterItem.map((category, categoryIndex) => {
           return (
             <Grid item xs={category.size} key={categoryIndex}>
