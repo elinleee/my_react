@@ -2,9 +2,32 @@
     background-color: rgb(240, 240, 240);
     color: rgb(200,200,200);
     text-decoration: none;
+    width: 100vw;
+    height: 30vh;
 }
 
 .footer a {
     text-decoration: none;
     color: rgb(180,180,180);
+}
+
+.footer-item-links {
+    font-size: 0.9em;
+}
+
+.footer-ul {
+    list-style: none;
+    line-height: 1.4em;
+    text-align: left;
+    padding: 0px;
+}
+
+.footer-category {
+    background-color: transparent;
+    box-shadow: none;
+}
+
+.footer-links {
+    text-align: left;
+    margin-bottom: 5px;
 }
