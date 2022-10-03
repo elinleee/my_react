@@ -6,7 +6,7 @@ export const MenuItems = [
     },
     {
         title: '예배 영상',
-        url: 'worship',
+        url: 'sermon',
         cName: 'nav-links'
     },
     {
@@ -16,7 +16,7 @@ export const MenuItems = [
     },
     {
         title: '하나된 석천',
-        url: 'us',
+        url: 'together',
         cName: 'nav-links'
     },
     {

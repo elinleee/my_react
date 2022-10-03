@@ -1,0 +1,10 @@
+.footer {
+    background-color: rgb(240, 240, 240);
+    color: rgb(200,200,200);
+    text-decoration: none;
+}
+
+.footer a {
+    text-decoration: none;
+    color: rgb(180,180,180);
+}
