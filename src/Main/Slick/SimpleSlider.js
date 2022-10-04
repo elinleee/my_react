@@ -34,7 +34,7 @@ function SimpleSlider () {
   return (
     <Slider {...settings}>
       <div>
-        <img src="img/passion_week1.png"/>
+        <img src="img/fullmoon.png"/>
       </div>
       <div>
         <img src="img/passion_week1.png"/>

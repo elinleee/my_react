@@ -5,7 +5,7 @@ import { styled } from '@mui/material/styles';
 
 import TypeSelector from '../Main/TypeSelector/TypeSelector';
 import YoutubePlayer from '../Main/Player/YoutubePlayer';
-import { Box, Stack, Paper } from '@mui/material';
+import { Box, Stack, Paper, Grid, Card } from '@mui/material';
 import SimpleSlider from '../Main/Slick/SimpleSlider';
 
 function Home(props) {
@@ -16,6 +16,14 @@ function Home(props) {
 		textAlign: 'center',
 		color: theme.palette.text.secondary,
 		width: '100%',
+		borderRadius: '20px',
+		boxShadow: '0px 0px 10px 3px rgb(245,245,245)',
+	}));
+	const RadiusCard = styled(Card)(({ theme }) => ({
+		borderRadius: '20px',
+		boxShadow: '0px 0px 10px 3px rgb(245,245,245)',
+		// margin: '10px',
+		padding: '10px'
 	}));
 
 	return (
@@ -27,12 +35,22 @@ function Home(props) {
 				<TypeSelector/>
 			</Box>
 			<Box width="100%" height="100%">
-				<Stack direction="row" spacing={2}>
+				<Grid container  columns={16} justifyContent='space-around'>
+				<Grid item xs={5}>
+				<RadiusCard><YoutubePlayer url="https://www.youtube.com/watch?v=v3H0rkk1pS0" /></RadiusCard>
+				</Grid>
+				<Grid item xs={5}>
+				<RadiusCard><YoutubePlayer url="https://www.youtube.com/watch?v=v3H0rkk1pS0" /></RadiusCard>
+				</Grid>
+				<Grid item xs={5}>
+				<RadiusCard><YoutubePlayer url="https://www.youtube.com/watch?v=v3H0rkk1pS0" /></RadiusCard>
+				</Grid>
+				</Grid>
+				{/* <Stack direction="row" spacing={2}>
 					<Item><YoutubePlayer url="https://www.youtube.com/watch?v=v3H0rkk1pS0" /></Item>
 					<Item><YoutubePlayer url="https://www.youtube.com/watch?v=v3H0rkk1pS0" /></Item>
 					<Item><YoutubePlayer url="https://www.youtube.com/watch?v=v3H0rkk1pS0" /></Item>
-					{/* <Item><YoutubePlayer url="https://www.youtube.com/watch?v=v3H0rkk1pS0" /></Item> */}
-				</Stack>
+				</Stack> */}
 			</Box>
 
 			{/* <SimpleSlider/> */}
